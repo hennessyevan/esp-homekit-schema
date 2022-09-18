@@ -23,6 +23,7 @@
         "h": { "$ref": "./general/h.json" },
         "i": { "$ref": "./general/i.json" },
         "ic": { "$ref": "./general/ic.json" },
+        "j": { "$ref": "./general/j.json" },
         "l": { "$ref": "./general/l.json" },
         "m": { "$ref": "./general/m.json" },
         "mc": { "$ref": "./general/mc.json" },
@@ -30,17 +31,20 @@
         "ntp": { "$ref": "./general/ntp.json" },
         "o": { "$ref": "./general/o.json" },
         "ot": { "$ref": "./general/ot.json" },
+        "p": { "$ref": "./general/p.json" },
         "pt": { "$ref": "./general/pt.json" },
         "q": { "$ref": "./general/q.json" },
         "r": { "$ref": "./general/r.json" },
         "s": { "$ref": "./general/s.json" },
         "sn": { "$ref": "./general/sn.json" },
+        "t": { "$ref": "./general/t.json" },
         "tt": { "$ref": "./general/tt.json" },
         "tz": { "$ref": "./general/tz.json" },
         "ttl": { "$ref": "./general/ttl.json" },
         "u": { "$ref": "./general/u.json" },
         "ul": { "$ref": "./general/ul.json" },
         "w": { "$ref": "./general/w.json" },
+        "x": { "$ref": "./general/x.json" },
         "z": { "$ref": "./general/z.json" },
         "zc": { "$ref": "./general/zc.json" }
       },
@@ -114,9 +118,15 @@
           },
 
           {
+            "if": { "properties": { "t": { "enum": [60] } } },
+            "then": { "$ref": "./accessories/tv.json" }
+          },
+
+          {
             "if": { "properties": { "t": { "enum": [1, 2] } } },
             "then": { "$ref": "./accessories/switch.json" }
           },
+
 
           {
             "if": { "properties": { "t": { "enum": [3, 13] } } },

@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "description": "Infra-red configuration settings\n\nhttps://github.com/RavenSystem/esp-homekit-devices/wiki/General-Configuration#Infra-red-Configuration\n\nUse to invert IR Tx LED state (default: 0)",
+  "type": "integer",
+  "minimum": 0,
+  "maximum": 1,
+  "default": 0
+} 

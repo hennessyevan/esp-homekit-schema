@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "description": "Infra-red configuration settings\n\nhttps://github.com/RavenSystem/esp-homekit-devices/wiki/General-Configuration#Infra-red-Configuration\nGPIO used by the IR Tx LED **(Mandatory)**",
+  "type": "integer",
+  "minimum": 1,
+  "maximum": 255,
+  "default": 1
+} 
